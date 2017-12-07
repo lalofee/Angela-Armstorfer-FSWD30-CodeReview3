@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Price comparison</title>
+	<link rel="stylesheet" href="FSWD30-CodeReview3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div id="container">
+
+      <header>
+            <span id="logo"></span>
+            <h2>Insurance Company</h2>
+        </header>
+
+     
+
+      <div class="flexcontainer">
+    
+          <div class="team"><img src="img/person1.png" alt="amsterdam" height="128" width="128">
+
+            <div class="details">
+				<span class="cityname" id="cityName1"></span>    
+				<span class="price" id="amsterdamPrice"></span>   
+<br>
+
+				<span class="countryname" id="country1"></span>	  
+				
+
+            </div>
+          </div>
+
+ 
+         <div class="team"><img src="img/person2.png" alt="london" height="128" width="128">
+
+            <div class="details">
+				<span class="cityname" id="cityName2"></span>     
+				<span class="price" id="londonPrice"></span>        
+<br>
+
+				<span class="countryname" id="country2"></span>     
+				
+            </div>
+
+          </div>
+
+          <div class="team"><img src="img/person3.png" alt="amsterdam" height="128" width="128">
+
+            <div class="details">
+				<span class="cityname" id="cityName1"></span>    
+				<span class="price" id="amsterdamPrice"></span>  
+<br>
+
+				<span class="countryname" id="country1"></span>	  
+				
+
+            </div>
+          </div>
+
+
+      </div>
+<br>
+      
+      
+
+	<footer>
+            <span id="logo"></span>
+            <h2>Insurance Company</h2>
+        </footer>
+
+
+</div>
+
+
+<script>
+
+var cityName1 = "Amsterdam";
+var cityName2 = "London";
+var country1 = "Netherlands";
+var country2 = "United Kingdom";
+
+document.getElementById("cityName1").innerHTML=cityName1;
+document.getElementById("cityName2").innerHTML=cityName2;
+document.getElementById("country1").innerHTML=country1;
+document.getElementById("country2").innerHTML=country2;
+
+//----------------------------------------------------------------
+
+
+function averageAmsterdam(price1, price2, price3, price4) {
+	var resultAmsterdam = (price1 + price2 + price3 + price4)/4;
+	
+	return resultAmsterdam;	
+	
+}
+document.getElementById("amsterdamPrice").innerHTML=averageAmsterdam(1500, 500, 1800, 700);
+
+
+
+
+
+function averageLondon(price1, price2, price3, price4) {
+	var resultLondon = (price1 + price2 + price3 + price4)/4;
+	
+	return resultLondon;
+}
+document.getElementById("londonPrice").innerHTML=averageLondon(2500, 1500, 1000, 900);
+
+
+//---------------------------------------------------------------
+
+
+
+</script>
+</body>
+</html>
