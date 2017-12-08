@@ -1,22 +1,20 @@
 body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 13px; 
+    margin:  0 auto;
+    max-width:  60em;
+    
+   	
+    /*font-size: 13px;*/ 
+
 }
-#container {
-	width: 600px;
-	margin: 0 auto;
-	background-color:#1CAA93;
-}
+
 header {   
-    width: 560px;
+   
     background: #E6E6E6;
     color: #D78307;
     padding: 20px;
     text-align: center;
-}
-h2 {
-	font-size: 14px;
-	margin:0;
+    font-size: 16px;
 }
 footer {   
     width: 560px;
@@ -26,69 +24,40 @@ footer {
     text-align: center;
 }
 
-#logo {
-	float: left;
-	padding-left: 20px;
-	margin-right: 10px;
-}
-.flexcontainer
-{
+
+.flexcontainer {
 	display: -webkit-flex;
    	display: flex;
    	-webkit-flex-direction: row;
    	flex-direction: row;
    	justify-content: space-around;
-   	padding-top: 25px;
+   	background-color:#1CAA93
+   	/*padding-top: 25px;*/
 }
-.team {
+#teamcontainer {
+	display: -webkit-flex;
+   	display: flex;
+   	-webkit-flex-direction: row;
+   	flex-direction: row;
+
+}
+#team {
+	display:  inline;
+	color:  #0B3861;
+	text-align: center;
+	margin-top: 0;
+	border:  1px solid red;
+}	
+.teampicture {	
 	border:  1px solid black;
 }
 
-.cityname {
-	font-size: 12px;
-	color: #0099cc;
-	font-weight: 600;
-	float: left;
-	}
-.countryname {
-	font-size: 12px;
-	color: #aaaaaa;
-	font-weight: 200;
-	float: left;
-	}
-
-.price {
-	font-size: 14px;
-	color: #aaaaaa;
-	font-weight: 200;
-	float: right;
-	}
 .details {
-	background-color: #ffffff;
+	color: #FFFFFF;
 	padding: 3px;
 	height:30px;
-	border-left:1px solid #cccccc;
-	border-right:1px solid #cccccc;
-	border-bottom:1px solid #cccccc;
+	text-align: center;
 }	
 .info {
-	padding: 25px;
-	font-size: 12px;
-}
-.info2 {
-	font-size: 12px;
-	width:100%;
-	text-align: center;
-}
-.result {
-	background-color: #0099cc;
-	border-radius: 5px;
-	width:80px;
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	text-align: center;
-	padding: 10px;
-}
 
 
