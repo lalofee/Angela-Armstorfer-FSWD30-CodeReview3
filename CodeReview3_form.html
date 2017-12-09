@@ -16,21 +16,25 @@
             <span>Insurance <b>Company</b></span>
         </header>
 
-     		<form id="input">
-     			<label class="field" for="name" >Your Name: <input type="search" id="name" name="name"></label>
-
-     			<label class="field" for="age">Age: <input type="search" id="age" name="age"></label>
-
-     			<label class="field" for="country">Country: <input type="search" id="country" name="country"></label>
-
-     			<label class="field" for="horsepower">Horsepower: <input type="search" id="horse_power" name="horsepower"></label>
-
-     			<button type="submit" id=button ><b>calculate</b></button>
-     		</form>
-      	
-      		
+     		
      	
+     	<!--<form action="CodeReview3_form.html" method="get">-->
+      <!--something strange happens, when using the <form> element instead of a <div>, then the output of the calculated insurance appears just for a second. tried everything, no idea. using <form> would be much better semantic, but something goes wrong!-->
+        <div id=form>
+                 
+       		<label class="field">Your Name: <input type="text" id="name" value=""/></label>
 
+     			<label class="field">Age: <input type="text" id="age" value=""/></label>
+
+     			<label class="field">Country: <input type="text" id="country" value=""/></label>
+
+     			<label class="field">Horsepower: <input type="text" id="horse_power" value=""/></label>
+
+     			<button type="submit" id=button onclick="calculateInsurance()"><b>calculate</b></button>
+     		
+        </div>
+     <!--</form>-->
+      		
       <footer>
           <span id=insurance_result></span>
         </footer>
@@ -38,6 +42,19 @@
 </div>
 
 <script>
+	
+function calculateInsurance() {
+	var age = document.getElementById("age").value;
+	var horse_power = document.getElementById("horse_power").value;
+	
+	var insurance = horse_power * 100 / age + 150; 
+
+	
+	document.getElementById("insurance_result").innerHTML=insurance;
+}
+
+
+//-------------------------------------------------------
 
 /*var name = "John Doe";
 var age = "20";
@@ -49,12 +66,6 @@ document.getElementById("name").innerHTML=name;
 document.getElementById("age").innerHTML=age;
 document.getElementById("country").innerHTML=country;
 document.getElementById("horse_power").innerHTML=horse_power;*/
-	
-function calculateInsurance(age, horse_power) {
-	var insurance = horse_power * 100 / age + 150; 
-	return insurance;
-}
-document.getElementById("insurance_result").innerHTML=calculateInsurance(20, 150);
 
 </script>
 

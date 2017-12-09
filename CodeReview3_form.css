@@ -21,7 +21,7 @@ header, footer {
    	justify-content: space-around;
    	background-color:#4169A2;
 }
-form {
+#form {
 	width: 22em;
 	margin-top: 1em;
 	color:  white;
@@ -31,8 +31,11 @@ label {
 	width: 20em;
 	padding:  1em;
 }
-
-
+input[type=text] {
+  border: 1px solid #999;
+  border-radius: 5px;
+  float:  right;
+}
 #button {
 	color:  #4169A2;
 	float:  right;
@@ -42,9 +45,4 @@ label {
 	border:  1px solid black;
 	font-size: 1em;
 
-}
-input[type=search] {
-  border: 1px solid #999;
-  border-radius: 5px;
-  float:  right;
 }
