@@ -19,24 +19,32 @@ header, footer {
    	-webkit-flex-flow: wrap;
 	flex-flow: wrap;
    	justify-content: space-around;
-   	background-color:#1CAA93;
+   	background-color:#4169A2;
 }
-#team {
-	flex:  2 100%;
-	color: #4169A2;
-	text-align: center;	
-	font-size: 1.2em;
-}	
+form {
+	width: 22em;
+	margin-top: 1em;
+	color:  white;
+}
+label {
+	float: right;
+	width: 20em;
+	padding:  1em;
+}
+
+
 #button {
-	color:  #0B3861;
-	font-style: italic;
-	background-color: #4CAF50;
-    border: none;
+	color:  #4169A2;
+	float:  right;
+	margin:  1em;
+	width:  11em;
+	border-radius: 5px;
+	border:  1px solid black;
+	font-size: 1em;
+
 }
-
-.details {
-	color: #FFFFFF;	
-	text-align: center;
-}	
-
-
+input[type=search] {
+  border: 1px solid #999;
+  border-radius: 5px;
+  float:  right;
+}

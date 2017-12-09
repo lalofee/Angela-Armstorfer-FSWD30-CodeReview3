@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insurance Company</title>
+	<link rel="stylesheet" href="CodeReview3_form.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="flexcontainer">
+	    
+
+	    <header>            
+            <span>Insurance <b>Company</b></span>
+        </header>
+
+     		<form id="input">
+     			<label class="field" for="name" >Your Name: <input type="search" id="name" name="name"></label>
+
+     			<label class="field" for="age">Age: <input type="search" id="age" name="age"></label>
+
+     			<label class="field" for="country">Country: <input type="search" id="country" name="country"></label>
+
+     			<label class="field" for="horsepower">Horsepower: <input type="search" id="horse_power" name="horsepower"></label>
+
+     			<button type="submit" id=button ><b>calculate</b></button>
+     		</form>
+      	
+      		
+     	
+
+      <footer>
+          <span id=insurance_result></span>
+        </footer>
+
+</div>
+
+<script>
+
+/*var name = "John Doe";
+var age = "20";
+var country = "Austria";
+var horse_power = "150";
+
+
+document.getElementById("name").innerHTML=name;
+document.getElementById("age").innerHTML=age;
+document.getElementById("country").innerHTML=country;
+document.getElementById("horse_power").innerHTML=horse_power;*/
+	
+function calculateInsurance(age, horse_power) {
+	var insurance = horse_power * 100 / age + 150; 
+	return insurance;
+}
+document.getElementById("insurance_result").innerHTML=calculateInsurance(20, 150);
+
+</script>
+
+</body>

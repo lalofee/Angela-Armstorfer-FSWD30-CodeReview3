@@ -23,16 +23,11 @@ header, footer {
 }
 #team {
 	flex:  2 100%;
-	color: #4169A2;
+	color:  #0B3861;
 	text-align: center;	
 	font-size: 1.2em;
 }	
-#button {
-	color:  #0B3861;
-	font-style: italic;
-	background-color: #4CAF50;
-    border: none;
-}
+
 
 .details {
 	color: #FFFFFF;	
@@ -40,3 +35,9 @@ header, footer {
 }	
 
 
+teamcontainer {
+	display: -webkit-flex;
+   	display: flex;
+   	-webkit-flex-direction: row;
+   	flex-direction: row;
+}
