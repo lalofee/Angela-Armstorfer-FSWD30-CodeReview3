@@ -24,11 +24,11 @@
                  
        		<label class="field">Your Name: <input type="text" id="name" value=""/></label>
 
-     			<label class="field">Age: <input type="text" id="age" value=""/></label>
+     			<label class="field">Age: <input type="number" required id="age" value=""/></label>
 
      			<label class="field">Country: <input type="text" id="country" value=""/></label>
 
-     			<label class="field">Horsepower: <input type="text" id="horse_power" value=""/></label>
+     			<label class="field">Horsepower: <input type="number" required id="horse_power" value=""/></label>
 
      			<button type="submit" id=button onclick="calculateInsurance()"><b>calculate</b></button>
      		
@@ -36,26 +36,33 @@
      <!--</form>-->
       		
       <footer>
-          <span id=insurance_result></span>
+          <span id="output"></span>
         </footer>
 
 </div>
-
+                    
 <script>
-	
-function calculateInsurance() {
-	var age = document.getElementById("age").value;
-	var horse_power = document.getElementById("horse_power").value;
-	
-	var insurance = horse_power * 100 / age + 150; 
 
-	
-	document.getElementById("insurance_result").innerHTML=insurance;
+function calculateInsurance() {
+
+  var name = document.getElementById("name").value;
+  var country = document.getElementById("country").value;
+
+  var age = document.getElementById("age").value;
+  var horse_power = document.getElementById("horse_power").value;
+
+  var result = (horse_power * 100 / age + 150);
+  var result = Math.round(result);
+  
+  var insurance = name + " your insurance in " + country + " is " + result + "€"; 
+
+document.getElementById("output").innerHTML=insurance;
 }
 
 
-//-------------------------------------------------------
 
+
+//------------------------------------------------------------------------
 /*var name = "John Doe";
 var age = "20";
 var country = "Austria";
@@ -67,6 +74,19 @@ document.getElementById("age").innerHTML=age;
 document.getElementById("country").innerHTML=country;
 document.getElementById("horse_power").innerHTML=horse_power;*/
 
+//------------------------------------------------------------------------
+
+/*function calculateInsurance() {
+
+  var age = document.getElementById("age").value;
+  var horse_power = document.getElementById("horse_power").value;
+  
+  var insurance = horse_power * 100 / age + 150 + "€"; 
+
+document.getElementById("output").innerHTML=insurance;
+}*/
+
 </script>
 
 </body>
+

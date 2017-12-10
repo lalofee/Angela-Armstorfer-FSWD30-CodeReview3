@@ -10,6 +10,7 @@ header, footer {
     padding: 1.5em;
     text-align: center;
     font-size: 1.2em;
+    min-height:  1.2em;
 }
 .flexcontainer {
 	display: -webkit-flex;
@@ -35,6 +36,17 @@ input[type=text] {
   border: 1px solid #999;
   border-radius: 5px;
   float:  right;
+}
+input[type=number] {
+  border: 1px solid #999;
+  border-radius: 5px;
+  float:  right;
+}
+input:required:valid {
+  border:  2px solid lightblue;
+}
+input:required:invalid, input:focus:invalid {
+  border:  1px solid red;
 }
 #button {
 	color:  #4169A2;
