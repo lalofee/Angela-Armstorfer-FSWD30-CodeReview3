@@ -12,31 +12,27 @@ header, footer {
     font-size: 1.2em;
 }
 .flexcontainer {
-	display: -webkit-flex;
+	  display: -webkit-flex;
    	display: flex;
    	-webkit-flex-direction: row;
    	flex-direction: row;
    	-webkit-flex-flow: wrap;
-	flex-flow: wrap;
+	  flex-flow: wrap;
    	justify-content: space-around;
    	background-color:#1CAA93;
 }
 #team {
-	flex:  2 100%;
-	color:  #0B3861;
-	text-align: center;	
-	font-size: 1.2em;
+  	flex:  2 100%;
+  	color:  #0B3861;
+  	text-align: center;	
+  	font-size: 1.2em;
 }	
-
-
 .details {
-	color: #FFFFFF;	
-	text-align: center;
-}	
-
-
+  	color: #FFFFFF;	
+  	text-align: center;
+  }	
 teamcontainer {
-	display: -webkit-flex;
+	  display: -webkit-flex;
    	display: flex;
    	-webkit-flex-direction: row;
    	flex-direction: row;

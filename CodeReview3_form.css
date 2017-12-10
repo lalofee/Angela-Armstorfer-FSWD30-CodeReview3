@@ -13,48 +13,47 @@ header, footer {
     min-height:  1.2em;
 }
 .flexcontainer {
-	display: -webkit-flex;
+	  display: -webkit-flex;
    	display: flex;
    	-webkit-flex-direction: row;
    	flex-direction: row;
    	-webkit-flex-flow: wrap;
-	flex-flow: wrap;
+	  flex-flow: wrap;
    	justify-content: space-around;
    	background-color:#4169A2;
 }
 #form {
-	width: 22em;
-	margin-top: 1em;
-	color:  white;
+  	width: 22em;
+  	margin-top: 1em;
+  	color:  white;
 }
 label {
-	float: right;
-	width: 20em;
-	padding:  1em;
+  	float: right;
+  	width: 20em;
+  	padding:  1em;
 }
 input[type=text] {
-  border: 1px solid #999;
-  border-radius: 5px;
-  float:  right;
-}
+    border: 1px solid #999;
+    border-radius: 5px;
+    float:  right;
+  }
 input[type=number] {
-  border: 1px solid #999;
-  border-radius: 5px;
-  float:  right;
+    border: 1px solid #999;
+    border-radius: 5px;
+    float:  right;
 }
 input:required:valid {
-  border:  2px solid lightblue;
+    border:  2px solid lightblue;
 }
 input:required:invalid, input:focus:invalid {
-  border:  1px solid red;
+    border:  1px solid red;
 }
 #button {
-	color:  #4169A2;
-	float:  right;
-	margin:  1em;
-	width:  11em;
-	border-radius: 5px;
-	border:  1px solid black;
-	font-size: 1em;
-
+  	color:  #4169A2;
+  	float:  right;
+  	margin:  1em;
+  	width:  11em;
+  	border-radius: 5px;
+  	border:  1px solid black;
+  	font-size: 1em;
 }

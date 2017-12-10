@@ -11,14 +11,11 @@
 
 <div class="flexcontainer">
 	    
-
-	    <header>            
-            <span>Insurance <b>Company</b></span>
-        </header>
-
-     		
-     	
-     	<!--<form action="CodeReview3_form.html" method="get">-->
+    <header>            
+      <span>Insurance <b>Company</b></span>
+    </header>
+      
+      <!--<form action="CodeReview3_form.html" method="get">-->
       <!--something strange happens, when using the <form> element instead of a <div>, then the output of the calculated insurance appears just for a second. tried everything, no idea. using <form> would be much better semantic, but something goes wrong!-->
         <div id=form>
                  
@@ -37,7 +34,7 @@
       		
       <footer>
           <span id="output"></span>
-        </footer>
+      </footer>
 
 </div>
                     
@@ -58,33 +55,6 @@ function calculateInsurance() {
 
 document.getElementById("output").innerHTML=insurance;
 }
-
-
-
-
-//------------------------------------------------------------------------
-/*var name = "John Doe";
-var age = "20";
-var country = "Austria";
-var horse_power = "150";
-
-
-document.getElementById("name").innerHTML=name;
-document.getElementById("age").innerHTML=age;
-document.getElementById("country").innerHTML=country;
-document.getElementById("horse_power").innerHTML=horse_power;*/
-
-//------------------------------------------------------------------------
-
-/*function calculateInsurance() {
-
-  var age = document.getElementById("age").value;
-  var horse_power = document.getElementById("horse_power").value;
-  
-  var insurance = horse_power * 100 / age + 150 + "€"; 
-
-document.getElementById("output").innerHTML=insurance;
-}*/
 
 </script>
 
