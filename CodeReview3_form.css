@@ -57,3 +57,21 @@ input:required:invalid, input:focus:invalid {
   	border:  1px solid black;
   	font-size: 1em;
 }
+a {
+  color: #D78307;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
